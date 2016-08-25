@@ -1,0 +1,7 @@
+version: '2'
+services:
+  snort:
+    image: mrlesmithjr/snort:latest
+    restart: always
+    environment:
+      SNORT_INT: 'eth0'
