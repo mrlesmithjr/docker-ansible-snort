@@ -2,6 +2,14 @@ Repo Info
 =========
 Builds and configures a working [Snort] image provisioned using [Ansible].
 
+Building
+--------
+* If you change the variables defined in `docker-entrypoint.yml` to define
+additional settings. You will need to rebuild the image.
+```
+docker build -t snort .
+```
+
 Consuming
 ---------
 * CLI:
